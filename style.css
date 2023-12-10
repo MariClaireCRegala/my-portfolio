@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif; /*your mom*/
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+#clues {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+p {
+    margin: 10px 0;
+}
+
+#attempts {
+    font-weight: bold;
+    color: #61dafb; /*your mom*/
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+#guess {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #61dafb;
+    color: #ffffff;
+    border: 1px solid #61dafb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #4fa3d1;
+}
+
+#restartBtn {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #61dafb;
+    color: #ffffff;
+    border: 1px solid #61dafb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#restartBtn:hover {
+    background-color: #4fa3d1;
+}
+
+#input-container.show-restart #restartBtn {
+    display: block;
+}
